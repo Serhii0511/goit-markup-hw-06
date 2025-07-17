@@ -581,6 +581,12 @@ button {
         gap: 24px;
     }
 }
+@media screen and (min-width: 1158px) {
+    .team-work {
+        gap: 24px;
+        width: calc((100% - 72px) / 4);
+    }
+}
 
 /*section 4*/
 
