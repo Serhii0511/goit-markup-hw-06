@@ -44,18 +44,19 @@ button {
 
 .container {
     max-width: 320px;
-    padding: 0 16px;
+    padding: 96px 0;
     margin: 0 auto;
 }
 @media  screen and (min-width: 768px) {
     .container {
     max-width: 768px;
+    padding: 96px 0;
            }
 }
 @media screen and (min-width: 1158px) {
     .container {
     max-width: 1158px;
-    padding: 0 15px;
+    padding: 120px 0;
      }
 }
 
@@ -71,6 +72,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
 }
 
 .nav-menu {
@@ -186,6 +188,9 @@ button {
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             padding: 24px 0;           
         }
+        .navigation {
+            display: flex;
+        }
 } 
 
 @media screen and (min-width: 1158px) {
@@ -223,7 +228,7 @@ button {
     background-color: #fff;
     opacity: 0;
         visibility: visible;
-        pointer-events: auto;
+        pointer-events: none;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open {
@@ -240,7 +245,7 @@ button {
     height: 100%;
 }
 .mobile-nav-menu {
-    margin-bottom: 168px;
+    margin-bottom: auto;
     font-weight: 700;
      font-size: 36px;
     line-height: 1.11;
@@ -254,6 +259,8 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+    border-radius: 50%;
+    background-color: transparent;
 }
 .mobile-contacts {
         font-weight: 500;
@@ -271,7 +278,6 @@ button {
 }
 .icons {
     display: flex;
-    justify-content: center;
     gap: 40px;
 }
 
@@ -292,6 +298,12 @@ button {
         header {
             background: #fff;
         }
+.studio-header-mob {
+    color: #404bbf;
+}
+.nav-mob {
+    color: #2e2f42;
+}
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -303,13 +315,13 @@ button {
 
 .title-one {
         font-weight: 700;
-        font-size: 56px;
+        font-size: 36px;
         line-height: 1.07;
         color: #ffffff;
         letter-spacing: 0.02em;
         text-align: center;
-        margin: 0 auto 72px;
-        padding-top: 72px;
+        margin: 0 auto;
+        width: 216px;
     }
         .title {
          background: #2e2f42;
@@ -354,8 +366,9 @@ button {
     }
     .title-one {
         margin: 0 auto 36px;
-        padding-top: 112px;
+        width: 496px;
         }
+
     }
 @media screen and (min-width: 1158px) {
     .title-one {
@@ -366,19 +379,15 @@ button {
         letter-spacing: 0.02em;
         text-align: center;
         max-width: 496px;
-        margin: 0 auto;
-        margin-bottom: 48px;
         }
     
         .title {
         background: #2e2f42;
-        padding: 188px 0 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\1-min.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         max-width: 1440px;
         background-position: center;
-       margin-bottom: 120px;
         }
     
        .button {
@@ -396,7 +405,6 @@ button {
          background-color: #4d5ae5;
           border-radius: 4px;
          cursor: pointer;
-         margin: 0 auto;
          transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        }
 }
@@ -427,7 +435,6 @@ button {
     flex-wrap: wrap;
     gap: 72px;
     margin: 0 16;
-    margin-bottom: 96px;
 }
 .advents {
         font-weight: 700;
@@ -450,7 +457,7 @@ button {
     .adventag {
          display: flex;
          flex-wrap: wrap;
-         gap: 24px;
+         gap: 72px 24px;
          
         }
     .advent {
@@ -477,7 +484,6 @@ button {
     .advantages {
         background: #fff;
         gap: 8px;
-        padding: 120px 0 120px 0;
         }
     
     
@@ -519,7 +525,6 @@ button {
     color: #2e2f42;
     display: flex;
     justify-content: center;
-    margin-bottom: 72px;
 }
 .my-team {
     background: #FFFFFF;
@@ -527,12 +532,10 @@ button {
     justify-content: center;
     gap: 72px;
     border-radius: 0 0 4px 4px;
-    width: 264px;
     background: #fff;
 }
 .team {
     background: #f4f4fd;
-    padding: 96px 16px;
 }
 .teams {
     font-weight: 500;
@@ -575,15 +578,22 @@ button {
 .my-team:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.work {
+    padding: 32px 0;
+}
 
 @media screen and (min-width: 768px) {
     .team-work {
-        gap: 24px;
+        gap: 64px 24px;
     }
 }
+
 @media screen and (min-width: 1158px) {
     .team-work {
         gap: 24px;
+        flex-wrap: nowrap;
+    }
+    .my-team {
         width: calc((100% - 72px) / 4);
     }
 }
@@ -642,17 +652,17 @@ button {
 .portfolio {
     position: relative;
     overflow: hidden;
-    padding: 96px 16px;
+    padding: 0 16px;
 }
 
 @media screen and (min-width: 768px) {
     .my-portfolio {
          flex-wrap: wrap;
          display: flex;
-         gap: 24px;
+         gap: 72px 24px;
         }
     .port {
-        width: calc((100% - 56px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 
@@ -665,6 +675,7 @@ button {
 
 footer {
     background: #2e2f42;
+    display: flex;
 }
 
 .studio-footer {
@@ -726,6 +737,7 @@ footer {
     display: flex;
     gap: 16px;
     justify-content: center;
+    margin-bottom: 72px;
 }
 
 .icon-li-footer {
@@ -766,7 +778,6 @@ footer {
 .form-footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
 }
 
@@ -811,9 +822,7 @@ footer {
 }
 
 .footer .container {
-    align-items: center;
     text-align: center;
-    padding: 96px 0;
 }
 .logo-p {
     margin-bottom: 72px;
@@ -823,22 +832,38 @@ footer {
     .footer .container {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        width: 584px;
+        text-align: start;
     }
     .logo-p {
         width: 264px;
         margin-bottom: 72px;
-        margin-left: 108px;
+        margin-right: 24px;
     }
     .form-footer {
-        width: 453px;
-        justify-content: flex-start;
-       
+        display: flex;
+        justify-content: flex-start;   
+    }
+    .label-footer {
+        margin-right: 24px;
     }
 }
 
-@media  screen and (min-width: 1158) {
-    
+@media  screen and (min-width: 1158px) {
+    .footer .container {
+        align-items: baseline;
+        gap: unset;
+        width: 1440px;
+    }
+    .no-form {
+        display: flex;
+    }
+    .logo-p {
+        margin-right: 120px;
+    }
+    .soc-media {
+        margin-right: 80px;
+    }
 }
 
 
@@ -860,7 +885,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 288px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -891,8 +916,9 @@ footer {
     border: none;
 }
 
-.cross {
+.cross-mob {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
 }
 
 .button-modal:hover .cross,
