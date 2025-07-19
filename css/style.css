@@ -392,6 +392,7 @@ address {
         background-size: cover;
         background-position: center;
         padding: 188px 0;
+        max-width: 1440px;
         }
     
        .button {
