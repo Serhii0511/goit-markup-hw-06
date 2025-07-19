@@ -604,7 +604,7 @@ address {
     .my-team {
         width: calc((100% - 72px) / 4);
     }
-    .teams {
+    .team {
         padding: 125px 0 115px;
     }
 }
