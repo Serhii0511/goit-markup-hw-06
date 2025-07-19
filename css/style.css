@@ -44,19 +44,19 @@ button {
 
 .container {
     max-width: 320px;
-    padding: 96px 0;
+    padding: 0 16px;
     margin: 0 auto;
 }
 @media  screen and (min-width: 768px) {
     .container {
     max-width: 768px;
-    padding: 96px 0;
+    padding: 0 16px;
            }
 }
 @media screen and (min-width: 1158px) {
     .container {
     max-width: 1158px;
-    padding: 120px 0;
+    padding: 0 15px;
      }
 }
 
@@ -219,6 +219,10 @@ button {
 
 /*mobile menu */
 
+address {
+    font-style: normal;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -292,7 +296,6 @@ button {
         border-radius: 50%;
         display: flex;
         align-items: center;
-        justify-content: center;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
         header {
@@ -320,8 +323,8 @@ button {
         color: #ffffff;
         letter-spacing: 0.02em;
         text-align: center;
-        margin: 0 auto;
-        width: 216px;
+        margin: 0 auto 72px;
+        max-width: 216px;
     }
         .title {
          background: #2e2f42;
@@ -330,7 +333,8 @@ button {
          background-size: cover;
          max-width: 320px;
          background-position: center;
-         margin: 0 auto 96px;
+         margin: 0 auto;
+         padding: 72px 0 72px;
         }
     .button {
         font-weight: 500;
@@ -363,10 +367,11 @@ button {
         background-size: cover;
         max-width: 768px;
         background-position: center;
+        padding: 112px 0;
     }
     .title-one {
         margin: 0 auto 36px;
-        width: 496px;
+        max-width: 496px;
         }
 
     }
@@ -377,7 +382,6 @@ button {
         line-height: 1.07;
         color: #ffffff;
         letter-spacing: 0.02em;
-        text-align: center;
         max-width: 496px;
         }
     
@@ -388,6 +392,7 @@ button {
         background-size: cover;
         max-width: 1440px;
         background-position: center;
+        padding: 188px 0;
         }
     
        .button {
@@ -452,6 +457,9 @@ button {
         letter-spacing: 0.02em;
         color: #434455;
 }
+.advantages {
+    padding: 96px 0;
+}
 
 @media screen and (min-width: 768px) {
     .adventag {
@@ -484,6 +492,7 @@ button {
     .advantages {
         background: #fff;
         gap: 8px;
+        padding: 118px 0 117px;
         }
     
     
@@ -536,6 +545,7 @@ button {
 }
 .team {
     background: #f4f4fd;
+    padding: 96px 0;
 }
 .teams {
     font-weight: 500;
@@ -565,7 +575,6 @@ button {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 32px;
 }
 .team-work {
     display: flex;
@@ -595,6 +604,9 @@ button {
     }
     .my-team {
         width: calc((100% - 72px) / 4);
+    }
+    .teams {
+        padding: 125px 0 115px;
     }
 }
 
@@ -652,7 +664,10 @@ button {
 .portfolio {
     position: relative;
     overflow: hidden;
-    padding: 0 16px;
+    padding: 96px 0;
+}
+.introduction {
+    margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -671,11 +686,15 @@ button {
         max-width: 1128px;
          width: calc((100% - 48px) / 3);
         }
+        .portfolio {
+            padding: 125px 0 120px;
+        }
 }
 
-footer {
+.footer {
     background: #2e2f42;
     display: flex;
+    padding: 100px 0;
 }
 
 .studio-footer {
@@ -779,6 +798,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.label-footer {
+    display: block;
+    margin-bottom: 16px;
 }
 
 .input-footer {
