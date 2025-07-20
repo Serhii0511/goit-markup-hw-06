@@ -194,6 +194,9 @@ button {
 } 
 
 @media screen and (min-width: 1158px) {
+    .page-header {
+        padding: 0 158px;
+    }
    .logo {
     margin-right: 76px;
    }
@@ -884,6 +887,7 @@ address {
     }
     .logo-p {
         margin-right: 120px;
+        margin-bottom: 0;
     }
     .soc-media {
         margin-right: 80px;
