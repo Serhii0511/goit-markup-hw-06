@@ -252,7 +252,6 @@ address {
     height: 100%;
 }
 .mobile-nav-menu {
-    margin-bottom: auto;
     font-weight: 700;
      font-size: 36px;
     line-height: 1.11;
@@ -261,6 +260,9 @@ address {
     gap: 40px;
     display: flex;
     flex-direction: column;
+}
+.mob-nav {
+    margin-bottom: auto;
 }
 .mobile-menu-close {
     position: absolute;
